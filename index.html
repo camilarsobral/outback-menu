@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/ae921b14fb.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,352 +18,428 @@
 </head>
 
 <body>
+    <main class="container-all">
 
-    <div class="container">
-        <!-- filter buttons -->
-        <button data-name="all">Mostrar Tudo</button>
-        <button data-name="aperitifs">Aperitivos</button>
-        <button data-name="burgers">Burgers</button>
-        <button data-name="ribs">Costelas</button>
-        <button data-name="sidedish">Acompanhamentos</button>
-        <button data-name="desserts">Sobremesas</button>
-    </div>
+        <header class="img-container">
+            <img class="logo-img" src="./images/outback-logo.png" alt="logo">
+            <hr class="line-break">
+        </header>
 
-    <div class="filterable-cards">
-        <!-- image cards -->
-        <div class="card" data-name="aperitifs">
-            <img class="card-img" src="./images/kookaburra-wings.jpg"" alt="">
+        <section class="container-buttons">
+            <!-- filter buttons -->
+            <button class="active" data-name="all">Mostrar Tudo</button>
+            <button data-name="aperitifs">Aperitivos</button>
+            <button data-name="burgers">Burgers</button>
+            <button data-name="ribs">Costelas</button>
+            <button data-name="sidedish">Acompanhamentos</button>
+            <button data-name="desserts">Sobremesas</button>
+        </section>
+
+        <section class="filterable-cards">
+            <!-- image cards -->
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/kookaburra-wings.jpg"" alt="">
             <div class=" card-body">
-            <div class="top">
-                <h3 class="card-title">Kookaburra Wings®</h3>
-                <p class="card-text">10 sobreasas de frango empanadas com um blend de temperos à sua escolha: light,
-                    medium ou hot. Servidas com molho tipo Blue Cheese e aipo crocante.</p>
+                <div class="top">
+                    <h3 class="card-title">Kookaburra Wings®</h3>
+                    <p class="card-text">10 sobreasas de frango empanadas com um blend de temperos à sua escolha: light,
+                        medium ou hot. Servidas com molho tipo Blue Cheese e aipo crocante.</p>
+                </div>
+                <div class="bottom">
+                    <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                    <i class="fa-solid fa-pepper-hot fa-lg" style="color: #c51b1b;"></i>
+                    <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
             </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="aperitifs">
-        <img class="card-img" src="./images/aussie-fries.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Aussie Cheese Fries®</h3>
-                <p class="card-text">Nossas fritas com uma cobertura irresistível de mix de queijos e bacon. O toque
-                    final fica por conta do molho Ranch.</p>
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/aussie-fries.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Aussie Cheese Fries®</h3>
+                        <p class="card-text">Nossas fritas com uma cobertura irresistível de mix de queijos e bacon. O
+                            toque
+                            final fica por conta do molho Ranch.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="aperitifs">
-        <img class="card-img" src="./images/beef-dillas.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Aussie Beef Quesadillas</h3>
-                <p class="card-text">Quesadillas deliciosamente recheadas com pétalas de Bloomin' Onion, tiras de
-                    filet mignon, mix de queijos e tomate. Acompanhadas do cremoso molho Bloom.</p>
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/beef-dillas.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Aussie Beef Quesadillas</h3>
+                        <p class="card-text">Quesadillas deliciosamente recheadas com pétalas de Bloomin' Onion, tiras
+                            de
+                            filet mignon, mix de queijos e tomate. Acompanhadas do cremoso molho Bloom.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$28,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="aperitifs">
-        <img class="card-img" src="./images/big-five-boomerang.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Big Five Boomerang</h3>
-                <p class="card-text">Um boomerang dos sabores favoritos do Outback! Uma surpreendente combinação de
-                    Kookaburra Wings®, Aussie Cheese Fries®, Billy Ribs, Firecracker Shrimp® e pétalas de Bloomin'
-                    Onion, acompanhados de molhos Bloom e tipo Blue Cheese.</p>
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/big-five-boomerang.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Big Five Boomerang</h3>
+                        <p class="card-text">Um boomerang dos sabores favoritos do Outback! Uma surpreendente combinação
+                            de
+                            Kookaburra Wings®, Aussie Cheese Fries®, Billy Ribs, Firecracker Shrimp® e pétalas de
+                            Bloomin'
+                            Onion, acompanhados de molhos Bloom e tipo Blue Cheese.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="aperitifs">
-        <img class="card-img" src="./images/shrimp-nachos.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Firecracker Shrimp Nachos</h3>
-                <p class="card-text">Deliciosos camarões empanados e temperados com nosso molho Firecracker. Servidos
-                    com saborosas tortillas crocantes.</p>
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/shrimp-nachos.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Firecracker Shrimp Nachos</h3>
+                        <p class="card-text">Deliciosos camarões empanados e temperados com nosso molho Firecracker.
+                            Servidos
+                            com saborosas tortillas crocantes.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-pepper-hot fa-lg" style="color: #c51b1b;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="aperitifs">
-        <img class="card-img" src="./images/bloomin-onion.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Bloomin' Onion</h3>
-                <p class="card-text">Nossa famosa cebola gigante e dourada com o autêntico sabor do Outback. Acompanha
-                    nosso maravilhoso molho Bloom.</p>
+            <div class="card" data-name="aperitifs">
+                <img class="card-img" src="./images/bloomin-onion.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Bloomin' Onion</h3>
+                        <p class="card-text">Nossa famosa cebola gigante e dourada com o autêntico sabor do Outback.
+                            Acompanha
+                            nosso maravilhoso molho Bloom.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="burgers">
-        <img class="card-img" src="./images/epic-cheddar.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Epic Cheddar Burger</h3>
-                <p class="card-text">Feito com 200g de carne, coberto por queijo tipo ementhal e molho cheddar, traz
-                    ainda um plus de bacon crocante, Smoked Mayo e, para finalizar, cebolas caramelizadas em um pão tipo
-                    brioche.</p>
+            <div class="card" data-name="burgers">
+                <img class="card-img" src="./images/epic-cheddar.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Epic Cheddar Burger</h3>
+                        <p class="card-text">Feito com 200g de carne, coberto por queijo tipo ementhal e molho cheddar,
+                            traz
+                            ainda um plus de bacon crocante, Smoked Mayo e, para finalizar, cebolas caramelizadas em um
+                            pão
+                            tipo
+                            brioche.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="burgers">
-        <img class="card-img" src="./images/veggie-blue.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Veggie Blue Cheese Burger</h3>
-                <p class="card-text">Hambúrguer vegetariano empanado, à base de brócolis, couve-flor e queijo
-                    gorgonzola, coberto por um mix de queijos derretidos. Servido com molhos de gorgonzola e smoked
-                    mayo, alface, tomate e picles de pepino em pão tipo brioche.” Servido com um acompanhamento a sua
-                    escolha.</p>
+            <div class="card" data-name="burgers">
+                <img class="card-img" src="./images/veggie-blue.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Veggie Blue Cheese Burger</h3>
+                        <p class="card-text">Hambúrguer vegetariano empanado, à base de brócolis, couve-flor e queijo
+                            gorgonzola, coberto por um mix de queijos derretidos. Servido com molhos de gorgonzola e
+                            smoked
+                            mayo, alface, tomate e picles de pepino em pão tipo brioche. </p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="burgers">
-        <img class="card-img" src="./images/aussie-plant.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Aussie Plant</h3>
-                <p class="card-text">O sabor do Outback em um burger 100% vegetal. A versão do The Outbacker com
-                    PlantPlus burger 100% vegetal, molho vegetal tipo cheddar, alface, tomate, cebola e picles no pão
-                    brioche. Servido com um acompanhamento a sua escolha.</p>
+            <div class="card" data-name="burgers">
+                <img class="card-img" src="./images/aussie-plant.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Aussie Plant</h3>
+                        <p class="card-text">O sabor do Outback em um burger 100% vegetal. A versão do The Outbacker com
+                            PlantPlus burger 100% vegetal, molho vegetal tipo cheddar, alface, tomate, cebola e picles
+                            no
+                            pão
+                            brioche. Servido com um acompanhamento a sua escolha.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="burgers">
-        <img class="card-img" src="./images/double-decker.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Ribs Double Decker</h3>
-                <p class="card-text">Burger com a nossa suculenta costela desfiada, caprichadas fatias de queijo tipo
-                    emmenthal e finalizado com molho Killer no pão tipo brioche. Servido com um acompanhamento a sua
-                    escolha.</p>
+            <div class="card" data-name="burgers">
+                <img class="card-img" src="./images/double-decker.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Ribs Double Decker</h3>
+                        <p class="card-text">Burger com a nossa suculenta costela desfiada, caprichadas fatias de queijo
+                            tipo
+                            emmenthal e finalizado com molho Killer no pão tipo brioche. Servido com um acompanhamento a
+                            sua
+                            escolha.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="burgers">
-        <img class="card-img" src="./images/ned-kelly.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Ned Kelly Cheddar Burger</h3>
-                <p class="card-text">O real sabor Down Under. No nosso pão australiano, 200g de carne, queijo cheddar
-                    cremoso e cebolas grelhadas com toque balsâmico. Servido com um acompanhamento a sua
-                    escolha.</p>
+            <div class="card" data-name="burgers">
+                <img class="card-img" src="./images/ned-kelly.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Ned Kelly Cheddar Burger</h3>
+                        <p class="card-text">O real sabor Down Under. No nosso pão australiano, 200g de carne, queijo
+                            cheddar
+                            cremoso e cebolas grelhadas com toque balsâmico. Servido com um acompanhamento a sua
+                            escolha.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$37,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="ribs">
-        <img class="card-img" src="./images/junior-ribs.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Junior Ribs</h3>
-                <p class="card-text">Essa versão traz meia costela grelhada em chama aberta e temperada com blend de
-                    especiarias.</p>
+            <div class="card" data-name="ribs">
+                <img class="card-img" src="./images/junior-ribs.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Junior Ribs</h3>
+                        <p class="card-text">Essa versão traz meia costela grelhada em chama aberta e temperada com
+                            blend de
+                            especiarias.</p>
+                    </div>
+                    <!-- <div class="bottom">
+                        <p class="card-price">R$20,00</p>
+                    </div> -->
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="ribs">
-        <img class="card-img" src="./images/ribs-onthebarbie.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Ribs On The Barbie</h3>
-                <p class="card-text">Nossa costela suína preparada em chama aberta como manda a tradição australiana,
-                    vem com as saborosas cinnamon apples.</p>
+            <div class="card" data-name="ribs">
+                <img class="card-img" src="./images/ribs-onthebarbie.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Ribs On The Barbie</h3>
+                        <p class="card-text">Nossa costela suína preparada em chama aberta como manda a tradição
+                            australiana,
+                            vem com as saborosas cinnamon apples.</p>
+                    </div>
+                    <!-- <div class="bottom">
+                        <p class="card-price">R$20,00</p>
+                    </div> -->
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="ribs">
-        <img class="card-img" src="./images/royalcheese-ribs.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Royal Cheese Ribs</h3>
-                <p class="card-text">Uma versão diferentona e maravilhosa da nossa Ribs: Ela vem: desossada, recheada
-                    com nosso mix de queijos, empanada de um jeito bem crocante e finalizada com queijo gratinado, molho
-                    Cheese Ranch e bacon.</p>
+            <div class="card" data-name="ribs">
+                <img class="card-img" src="./images/royalcheese-ribs.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Royal Cheese Ribs</h3>
+                        <p class="card-text">Uma versão diferentona e maravilhosa da nossa Ribs: Ela vem: desossada,
+                            recheada
+                            com nosso mix de queijos, empanada de um jeito bem crocante e finalizada com queijo
+                            gratinado,
+                            molho
+                            Cheese Ranch e bacon.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="sidedish">
-        <img class="card-img" src="./images/mac-cheese.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Aussie Mac N' Cheese</h3>
-                <p class="card-text">Pasta caracolina com creme de queijos e crumble do nosso crouton.</p>
+            <div class="card" data-name="sidedish">
+                <img class="card-img" src="./images/mac-cheese.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Aussie Mac N' Cheese</h3>
+                        <p class="card-text">Pasta caracolina com creme de queijos e crumble do nosso crouton. Não leva
+                            bacon.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="sidedish">
-        <img class="card-img" src="./images/mashed-potato.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Royal Cheese Ribs</h3>
-                <p class="card-text">Uma versão diferentona e maravilhosa da nossa Ribs: Ela vem: desossada, recheada
-                    com nosso mix de queijos, empanada de um jeito bem crocante e finalizada com queijo gratinado, molho
-                    Cheese Ranch e bacon.</p>
+            <div class="card" data-name="sidedish">
+                <img class="card-img" src="./images/mashed-potato.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Royal Cheese Ribs</h3>
+                        <p class="card-text">Uma versão diferentona e maravilhosa da nossa Ribs: Ela vem: desossada,
+                            recheada
+                            com nosso mix de queijos, empanada de um jeito bem crocante e finalizada com queijo
+                            gratinado,
+                            molho
+                            Cheese Ranch e bacon.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="sidedish">
-        <img class="card-img" src="./images/el-ranchito.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">El Ranchito</h3>
-                <p class="card-text">Combinação de alface, cenoura, repolho roxo, mix de queijos, bacon, tiras de
-                    tortillas crocantes e molho Barbecue Ranch.</p>
+            <div class="card" data-name="sidedish">
+                <img class="card-img" src="./images/el-ranchito.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">El Ranchito</h3>
+                        <p class="card-text">Combinação de alface, cenoura, repolho roxo, mix de queijos, bacon, tiras
+                            de
+                            tortillas crocantes e molho Barbecue Ranch.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="sidedish">
-        <img class="card-img" src="./images/caesar-salad.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Caesar Salad</h3>
-                <p class="card-text">Combinação de alface, queijo Parmesão, dos queridos croutons Outback e Molho
-                    Caesar.</p>
+            <div class="card" data-name="sidedish">
+                <img class="card-img" src="./images/caesar-salad.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Caesar Salad</h3>
+                        <p class="card-text">Combinação de alface, queijo Parmesão, dos queridos croutons Outback e
+                            Molho
+                            Caesar.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="desserts">
-        <img class="card-img" src="./images/cinnamon-banoffee.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Choco Cinnamon Banoffee</h3>
-                <p class="card-text">Versão exclusiva da Banoffee no estilo Outback: base crocante de biscoito Thunder,
-                    doce de leite, brigadeiro com canela e finalizado com rodelas de banana, chantilly e canela.</p>
+            <div class="card" data-name="desserts">
+                <img class="card-img" src="./images/cinnamon-banoffee.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Choco Cinnamon Banoffee</h3>
+                        <p class="card-text">Versão exclusiva da Banoffee no estilo Outback: base crocante de biscoito
+                            Thunder,
+                            doce de leite, brigadeiro com canela e finalizado com rodelas de banana, chantilly e canela.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cubes-stacked fa-lg" style="color: #5f93ec;"></i>
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="desserts">
-        <img class="card-img" src="./images/cinnamon-oblivion.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Cinnamon Oblivion</h3>
-                <p class="card-text">A sobremesa que nossos waiters adoram explicar. Contém nozes ou derivado de nozes.
-                    Contém nozes ou derivado de nozes.</p>
+            <div class="card" data-name="desserts">
+                <img class="card-img" src="./images/cinnamon-oblivion.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Cinnamon Oblivion</h3>
+                        <p class="card-text">A sobremesa que nossos waiters adoram explicar. Contém nozes ou derivado de
+                            nozes.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cubes-stacked fa-lg" style="color: #5f93ec;"></i>
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="desserts">
-        <img class="card-img" src="./images/choc-thunder.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Chocolate Thunder From Down Under</h3>
-                <p class="card-text">Nosso brownie exclusivo e quentinho com sorvete de baunilha e deliciosa calda de
-                    chocolate preparada diariamente no Outback. Finalizado com chantilly e raspas de chocolate.</p>
+            <div class="card" data-name="desserts">
+                <img class="card-img" src="./images/choc-thunder.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Chocolate Thunder From Down Under</h3>
+                        <p class="card-text">Nosso brownie exclusivo e quentinho com sorvete de baunilha e deliciosa
+                            calda
+                            de
+                            chocolate preparada diariamente no Outback. Finalizado com chantilly e raspas de chocolate.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cubes-stacked fa-lg" style="color: #5f93ec;"></i>
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="desserts">
-        <img class="card-img" src="./images/havanna-thunder.jpg" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">Havanna Thunder</h3>
-                <p class="card-text">O nosso brownie, com nozes pecans, agora em uma versão de doce de leite Havanna.
-                    Servido com sorvete de baunilha, chantilly, crumble de biscoito e finalizado com a deliciosa calda
-                    de doce de leite Havanna.</p>
+            <div class="card" data-name="desserts">
+                <img class="card-img" src="./images/havanna-thunder.jpg" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">Havanna Thunder</h3>
+                        <p class="card-text">O nosso brownie, com nozes pecans, agora em uma versão de doce de leite
+                            Havanna.
+                            Servido com sorvete de baunilha, chantilly, crumble de biscoito e finalizado com a deliciosa
+                            calda
+                            de doce de leite Havanna.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cubes-stacked fa-lg" style="color: #5f93ec;"></i>
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card" data-name="desserts">
-        <img class="card-img" src="./images/smores.png" alt="">
-        <div class="card-body">
-            <div class="top">
-                <h3 class="card-title">S'mores Outback</h3>
-                <p class="card-text">Uma sobremesa quente, que combina cookies com gotas de chocolate, uma
-                    surpreendente pasta cremosa de Kit Kat, marshmallow gratinado, nossa calda de chocolate e
-                    pedaços de Kit Kat para finalizar.</p>
+            <div class="card" data-name="desserts">
+                <img class="card-img" src="./images/smores.png" alt="">
+                <div class="card-body">
+                    <div class="top">
+                        <h3 class="card-title">S'mores Outback</h3>
+                        <p class="card-text">Uma sobremesa quente, que combina cookies com gotas de chocolate, uma
+                            surpreendente pasta cremosa de Kit Kat, marshmallow gratinado, nossa calda de chocolate e
+                            pedaços de Kit Kat para finalizar.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-cubes-stacked fa-lg" style="color: #5f93ec;"></i>
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                        <i class="fa-sharp fa-solid fa-leaf fa-lg" style="color: #4eb517;"></i>
+                    </div>
+                </div>
             </div>
-            <div class="bottom">
-                <p class="card-price">R$20,00</p>
-            </div>
-        </div>
-    </div>
 
-    </div>
+        </section>
+
+
+    </main>
+
 
 </body>
 
