@@ -22,40 +22,48 @@
 <body>
     <main class="container-all">
 
-        <header class="img-container">
-            <img class="logo-img" src="./images/outback-logo.png" alt="logo">
-            <hr class="line-break">
-        </header>
+        <div class="top-section">
+            <header class="img-container">
+                <img class="logo-img" src="./images/outback-logo.png" alt="logo">
+                <hr class="line-break">
+            </header>
 
-        <section class="container-links">
-            <ul class="gallery">
-                <!-- filter buttons -->
-                <li class="filter active" data-filter="all" data-name="all">Mostrar Tudo</li>
-                <li class="filter" data-filter="aperitifs" data-name="aperitifs">Aperitivos</li>
-                <li class="filter" data-filter="burgers" data-name="burgers">Burgers</li>
-                <li class="filter" data-filter="ribs" data-name="ribs">Costelas</li>
-                <li class="filter" data-filter="sidedish" data-name="sidedish">Acompanhamentos</li>
-                <li class="filter" data-filter="desserts" data-name="desserts">Sobremesas</li>
-            </ul>
-        </section>
+            <section class="container-links">
+                <ul class="gallery">
+                    <!-- filter buttons -->
+                    <li class="filter active" data-filter="all" data-name="all">Mostrar Tudo</li>
+                    <li class="filter" data-filter="aperitifs" data-name="aperitifs">Aperitivos</li>
+                    <li class="filter" data-filter="burgers" data-name="burgers">Burgers</li>
+                    <li class="filter" data-filter="ribs" data-name="ribs">Costelas</li>
+                    <li class="filter" data-filter="sidedish" data-name="sidedish">Acompanhamentos</li>
+                    <li class="filter" data-filter="desserts" data-name="desserts">Sobremesas</li>
+                </ul>
+            </section>
+        </div>
 
 
-        <section class="filterable-cards">
+
+
+        <section class="section-body">
             <!-- image cards -->
-            <div class="card aperitifs" data-name="aperitifs">
-                <img class="card-img" src="./images/kookaburra-wings.jpg"" alt="">
-            <div class=" card-body">
-                <div class="top">
-                    <h3 class="card-title">Kookaburra Wings®</h3>
-                    <p class="card-text">10 sobreasas de frango empanadas com um blend de temperos à sua escolha: light,
-                        medium ou hot. Servidas com molho tipo Blue Cheese e aipo crocante.</p>
+            <div class="filterable-cards">
+
+
+                <div class="card aperitifs" data-name="aperitifs">
+                    <img class="card-img" src="./images/kookaburra-wings.jpg"" alt="">
+                        <div class=" card-body">
+                    <div class="top">
+                        <h3 class="card-title">Kookaburra Wings®</h3>
+                        <p class="card-text">10 sobreasas de frango empanadas com um blend de temperos à sua escolha:
+                            light,
+                            medium ou hot. Servidas com molho tipo Blue Cheese e aipo crocante.</p>
+                    </div>
+                    <div class="bottom">
+                        <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
+                        <i class="fa-solid fa-pepper-hot fa-lg" style="color: #c51b1b;"></i>
+                        <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
+                    </div>
                 </div>
-                <div class="bottom">
-                    <i class="fa-solid fa-wheat-awn-circle-exclamation fa-lg" style="color: #a3513c;"></i>
-                    <i class="fa-solid fa-pepper-hot fa-lg" style="color: #c51b1b;"></i>
-                    <i class="fa-solid fa-cow fa-lg" style="color: #e5931f;"></i>
-                </div>
-            </div>
             </div>
 
             <div class="card aperitifs" data-name="aperitifs">
@@ -439,8 +447,26 @@
                     </div>
                 </div>
             </div>
+            </div>
+
+            <div>
+                <footer class="footer">
+                    <div>
+                        <p>Developed by Camila Sobral.</p>
+                    </div>
+                    <div class="icons-footer">
+                        <a href="https://www.linkedin.com/in/camilarsobral/"><i class="fa-brands fa-linkedin fa-xl"
+                                style="color: #f6f2e9;"></i></a>
+                        <a href="https://github.com/camilarsobral"><i class="fa-brands fa-github fa-xl"
+                                style="color: #F6F2E9;"></i></a>
+                        <a href=""><i class="fa-solid fa-suitcase fa-xl" style="color: #F6F2E9;"></i></a>
+                    </div>
+                </footer>
+            </div>
 
         </section>
+
+
 
 
     </main>
