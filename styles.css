@@ -122,6 +122,39 @@ button.active {
     margin-top: 5px;
 }
 
+.card.show {
+    animation: show 1s ease-in-out 0s 1 forwards;
+    transform-origin: center;
+    -webkit-animation: show 1s ease-in-out 0s 1 forwards;
+}
+
+.card.hide {
+    animation: hide 1s ease-in-out 0s 1 forwards;
+    transform-origin: center;
+    -webkit-animation: hide 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
 @media screen and (min-width: 768px) and (max-width: 1120px) {
     /* body {
         min-height: 100vh;

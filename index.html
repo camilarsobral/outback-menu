@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <!-- scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js" defer></script>
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/ae921b14fb.js" crossorigin="anonymous"></script>
@@ -25,19 +27,22 @@
             <hr class="line-break">
         </header>
 
-        <section class="container-buttons">
-            <!-- filter buttons -->
-            <button class="active" data-name="all">Mostrar Tudo</button>
-            <button data-name="aperitifs">Aperitivos</button>
-            <button data-name="burgers">Burgers</button>
-            <button data-name="ribs">Costelas</button>
-            <button data-name="sidedish">Acompanhamentos</button>
-            <button data-name="desserts">Sobremesas</button>
+        <section class="container-links">
+            <ul class="gallery">
+                <!-- filter buttons -->
+                <li class="filter active" data-filter="all" data-name="all">Mostrar Tudo</li>
+                <li class="filter" data-filter="aperitifs" data-name="aperitifs">Aperitivos</li>
+                <li class="filter" data-filter="burgers" data-name="burgers">Burgers</li>
+                <li class="filter" data-filter="ribs" data-name="ribs">Costelas</li>
+                <li class="filter" data-filter="sidedish" data-name="sidedish">Acompanhamentos</li>
+                <li class="filter" data-filter="desserts" data-name="desserts">Sobremesas</li>
+            </ul>
         </section>
+
 
         <section class="filterable-cards">
             <!-- image cards -->
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/kookaburra-wings.jpg"" alt="">
             <div class=" card-body">
                 <div class="top">
@@ -53,7 +58,7 @@
             </div>
             </div>
 
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/aussie-fries.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -68,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/beef-dillas.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -84,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/big-five-boomerang.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -102,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/shrimp-nachos.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -119,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="aperitifs">
+            <div class="card aperitifs" data-name="aperitifs">
                 <img class="card-img" src="./images/bloomin-onion.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -136,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="burgers">
+            <div class="card burgers" data-name="burgers">
                 <img class="card-img" src="./images/epic-cheddar.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -155,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="burgers">
+            <div class="card burgers" data-name="burgers">
                 <img class="card-img" src="./images/veggie-blue.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -173,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="burgers">
+            <div class="card burgers" data-name="burgers">
                 <img class="card-img" src="./images/aussie-plant.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -191,7 +196,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="burgers">
+            <div class="card burgers" data-name="burgers">
                 <img class="card-img" src="./images/double-decker.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -209,7 +214,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="burgers">
+            <div class="card burgers" data-name="burgers">
                 <img class="card-img" src="./images/ned-kelly.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -226,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="ribs">
+            <div class="card ribs" data-name="ribs">
                 <img class="card-img" src="./images/junior-ribs.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -241,7 +246,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="ribs">
+            <div class="card ribs" data-name="ribs">
                 <img class="card-img" src="./images/ribs-onthebarbie.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -256,7 +261,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="ribs">
+            <div class="card ribs" data-name="ribs">
                 <img class="card-img" src="./images/royalcheese-ribs.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -275,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="sidedish">
+            <div class="card sidedish" data-name="sidedish">
                 <img class="card-img" src="./images/mac-cheese.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -291,7 +296,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="sidedish">
+            <div class="card sidedish" data-name="sidedish">
                 <img class="card-img" src="./images/mashed-potato.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -310,7 +315,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="sidedish">
+            <div class="card sidedish" data-name="sidedish">
                 <img class="card-img" src="./images/el-ranchito.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -325,7 +330,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="sidedish">
+            <div class="card sidedish" data-name="sidedish">
                 <img class="card-img" src="./images/caesar-salad.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -341,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="desserts">
+            <div class="card desserts" data-name="desserts">
                 <img class="card-img" src="./images/cinnamon-banoffee.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -360,7 +365,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="desserts">
+            <div class="card desserts" data-name="desserts">
                 <img class="card-img" src="./images/cinnamon-oblivion.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -377,7 +382,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="desserts">
+            <div class="card desserts" data-name="desserts">
                 <img class="card-img" src="./images/choc-thunder.png" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -397,7 +402,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="desserts">
+            <div class="card desserts" data-name="desserts">
                 <img class="card-img" src="./images/havanna-thunder.jpg" alt="">
                 <div class="card-body">
                     <div class="top">
@@ -417,7 +422,7 @@
                 </div>
             </div>
 
-            <div class="card" data-name="desserts">
+            <div class="card desserts" data-name="desserts">
                 <img class="card-img" src="./images/smores.png" alt="">
                 <div class="card-body">
                     <div class="top">
